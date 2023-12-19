@@ -1,0 +1,59 @@
+body {
+    background-image: url('stuff/BrownerShadeOfPale.jpg');
+    font-family: Calibri, sans-serif;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.right {
+    display: grid;
+    place-items: end;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.gray {
+    color: #C0C0C0;
+}
+
+.darkGray {
+    color: #808080;
+}
+
+.orange {
+    color: #FF8040;
+}
+
+.yellow {
+    color: #FFFF80;
+}
+
+
+.brightYellow {
+    color: #FFFF00;
+}
+
+.inline {
+    display: inline;
+}
+
+.small {
+    font-size: x-small;
+}
+
+.lessSmall {
+    font-size: small;
+}
