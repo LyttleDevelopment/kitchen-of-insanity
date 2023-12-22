@@ -41,9 +41,12 @@ body {
     color: #FFFF80;
 }
 
-
 .brightYellow {
     color: #FFFF00;
+}
+
+.link {
+    text-decoration-color: blue;
 }
 
 .inline {
@@ -56,4 +59,57 @@ body {
 
 .lessSmall {
     font-size: small;
+}
+
+.borderSpaceTen {
+    border-spacing: 10px;
+}
+
+.borderSpaceTwenty {
+    border-spacing: 20px;
+}
+
+.cellPaddingThree {
+    padding: 3px;
+}
+
+.cellPaddingFive {
+    padding: 5px;
+}
+
+.cellPaddingTen {
+    padding: 10px;
+}
+
+.thinOuterBorder {
+    border: solid grey 1px;
+    border-bottom: solid #333333 1px;
+    border-right: solid #333333 1px;
+}
+
+.outerBorder {
+    border: solid grey 2px;
+    border-bottom: solid #333333 2px;
+    border-right: solid #333333 2px;
+}
+
+.thickOuterBorder {
+    border: solid grey 5px;
+    border-bottom: solid #333333 5px;
+    border-right: solid #333333 5px;
+    border-spacing: 10px;
+}
+
+.innerBorder {
+    border: solid grey 1px;
+    border-top: solid #333333 1px;
+    border-left: solid #333333 1px;
+}
+
+.top {
+    vertical-align:top;
+}
+
+.bottom {
+    vertical-align: bottom;
 }
