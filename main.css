@@ -113,3 +113,12 @@ body {
 .bottom {
     vertical-align: bottom;
 }
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee::before {
+    content: '\00a0';
+}
