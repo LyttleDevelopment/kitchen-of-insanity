@@ -1,17 +1,17 @@
-# Use an official Node.js runtime as a parent image
-FROM node:20.17.0
+# Use the official Nginx image
+FROM nginx:alpine
 
-# Set the working directory in the container
-WORKDIR /usr/src/bot
+# Copy the custom Nginx configuration file to the correct location
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy the current directory contents into the container at /community-v3/Client
-COPY . .
+# Set the working directory to where Nginx serves files
+WORKDIR /usr/share/nginx/html
 
-# Install dependencies using npm ci
-RUN npm ci
+# Copy all HTML files from the "root" directory of the project to the working directory
+COPY root/ .
 
-# Build the application
-RUN npm run docker:setup
+# Expose port 80 to allow external access to the container
+EXPOSE 80
 
-# Command to run your application
-CMD ["npm", "start"]
+# Run Nginx in the foreground (as the main process)
+CMD ["nginx", "-g", "daemon off;"]
