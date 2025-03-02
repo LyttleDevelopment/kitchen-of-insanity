@@ -122,7 +122,3 @@ body {
 .marquee::before {
     content: '\00a0';
 }
-
-.test {
-    background-color: wheat;
-}
