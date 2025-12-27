@@ -25,7 +25,7 @@ jobs:
       - name: Build Docker Image
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: docker build -t ghcr.io/lyttledevelopment/the-doors-quarterly:main .
+        run: docker build -t ghcr.io/lyttledevelopment/kitchen-of-insanity:main .
 
       - name: Push Docker Image
-        run: docker push ghcr.io/lyttledevelopment/the-doors-quarterly:main
+        run: docker push ghcr.io/lyttledevelopment/kitchen-of-insanity:main
